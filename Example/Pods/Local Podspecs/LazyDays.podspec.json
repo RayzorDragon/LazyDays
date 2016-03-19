@@ -1,0 +1,25 @@
+{
+  "name": "LazyDays",
+  "version": "0.1.0",
+  "summary": "A Test in making and maintaining a Cocoapods Repo... and holding any small quick fixes or extensions I come up with",
+  "description": "A Test in making and maintaining a Cocoapods Repo... and holding any small quick fixes or extensions I come up with",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/LazyDays",
+  "license": "MIT",
+  "authors": {
+    "Raymond Gatz": "Raymond.Gatz@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/LazyDays.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "LazyDays": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

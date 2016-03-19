@@ -1,11 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'LazyDays_Example', :exclusive => true do
+target 'LazyDays_Example' do
   pod 'LazyDays', :path => '../'
 end
 
-target 'LazyDays_Tests', :exclusive => true do
+target 'LazyDays_Tests' do
   pod 'LazyDays', :path => '../'
 
   pod 'Quick', '~> 0.8.0'

@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/LazyDays.svg?style=flat)](http://cocoapods.org/pods/LazyDays)
 [![Platform](https://img.shields.io/cocoapods/p/LazyDays.svg?style=flat)](http://cocoapods.org/pods/LazyDays)
 
-A Test in making and maintaining a Cocoapods Repo... and holding any small quick fixes or extensions I come up
+A Test in making and maintaining a Cocoapods Repo... and holding any small quick fixes or extensions I come up with.
 
 ## Usage
 
