@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F2D2D5A109F566CE0518F1525AC6A1B0'
+               BlueprintIdentifier = '32A7307DC18B6BC24B639577418BE9B4'
                BlueprintName = 'LazyDays'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'LazyDays.framework'>

@@ -1,35 +1,16 @@
 PODS:
-  - FBSnapshotTestCase (2.0.7):
-    - FBSnapshotTestCase/SwiftSupport (= 2.0.7)
-  - FBSnapshotTestCase/Core (2.0.7)
-  - FBSnapshotTestCase/SwiftSupport (2.0.7):
-    - FBSnapshotTestCase/Core
   - LazyDays (0.1.0)
-  - Nimble (3.0.0)
-  - Nimble-Snapshots (3.0.0):
-    - FBSnapshotTestCase (~> 2.0.7)
-    - Nimble
-    - Quick
-  - Quick (0.8.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
   - LazyDays (from `../`)
-  - Nimble (= 3.0.0)
-  - Nimble-Snapshots
-  - Quick (~> 0.8.0)
 
 EXTERNAL SOURCES:
   LazyDays:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
   LazyDays: 8d68d945ccda6d234ff3dece38d65e9ebad708e1
-  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
-  Nimble-Snapshots: ab41dd737dcd33a0b0cb005a30465fef70b7207a
-  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
 
-PODFILE CHECKSUM: e6e540cfe5f4eaec5da41fe7e1149cd6262faeb8
+PODFILE CHECKSUM: 22aa5bb40023563adc90aad28ddfc6d040c4a1e7
 
 COCOAPODS: 1.0.0.beta.6
