@@ -30,8 +30,11 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo Triggered by $REQUESTER_VAR
-          if $REQUESTER_VAR != null; then
-            echo Not Null
-          else
-            echo No Requester Found
-          fi
+      
+      - name: check previous var
+        if: $REQUESTER_VAR != null
+        run: echo Requester exists!
+        
+      - name: requester doesn't exist?!
+        if: $REQUESTER_VAR == null
+        run: echo Ghost Request
