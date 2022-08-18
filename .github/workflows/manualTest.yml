@@ -30,3 +30,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo Triggered by $REQUESTER_VAR
+          if $REQUESTER_VAR != null; then
+            echo Not Null
+          else
+            echo No Requester Found
+          fi
