@@ -9,8 +9,12 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+env:
+  REQUESTER_VAR: ${{ github.event.sender.login }}
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+ 
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
@@ -26,15 +30,14 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          REQUESTER_VAR=${{ github.event.sender.login }}
           echo Add other actions to build,
           echo test, and deploy your project.
           echo Triggered by $REQUESTER_VAR
       
       - name: check previous var
-        if: $REQUESTER_VAR != null
+        if: env.REQUESTER_VAR != null
         run: echo Requester exists!
         
       - name: requester doesn't exist?!
-        if: $REQUESTER_VAR == null
+        if: env.REQUESTER_VAR == null
         run: echo Ghost Request
