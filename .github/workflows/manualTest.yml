@@ -30,4 +30,4 @@ jobs:
           echo test, and deploy your project.
           
       - name: Run triggering identifier
-        run: echo Triggered by $github.event.sender.login
+        run: echo Triggered by ${{ github }}
