@@ -26,8 +26,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+          REQUESTER_VAR=${{ github.event.sender.login }}
           echo Add other actions to build,
           echo test, and deploy your project.
-          
-      - name: Run triggering identifier
-        run: echo Triggered by ${{ github.event.sender.login }}
+          echo Triggered by $REQUESTER_VAR
