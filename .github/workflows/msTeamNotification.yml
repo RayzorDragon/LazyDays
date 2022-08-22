@@ -1,0 +1,23 @@
+name: Microsoft Teams Notification
+
+on:
+  pull_request:
+    types: [opened, reopened]
+    branches: [ "main" ]
+    
+env:
+  REQUESTER_VAR: ${{ github.event.sender.login }}
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Set Requester Variable Flag"
+      if: env.REQUESTER_VAR != null
+      uses: aliencube/microsoft-teams-actions@v0.8.0
+      with:
+        webhook_uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
+        title: "${{ github.event.sender.login }} is issuing a pull request!"
+        summary: "Someone is attempting to update the main branch"
+        theme_color: 17a2b8
+        
