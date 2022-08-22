@@ -3,7 +3,7 @@ name: Microsoft Teams Notification
 on:
   pull_request:
     types: [opened, reopened]
-    branches: [ "main" ]
+    branches: [ "master" ]
     
 env:
   REQUESTER_VAR: ${{ github.event.sender.login }}
